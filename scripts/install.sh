@@ -2,7 +2,7 @@
 # Instala skills de Synera sin el sistema de plugins, copiándolas a ~/.claude/skills/
 # Uso: ./install.sh [skill1 skill2 ...]   (sin args = todas)
 set -euo pipefail
-REPO="synera/synera-skills"
+REPO="synerarg/claude-code-skills"
 DEST="${HOME}/.claude/skills"
 ALL=(afip-arca meta-n8n-whatsapp n8n-production-patterns mercadopago correo-argentino)
 SKILLS=("${@:-${ALL[@]}}")

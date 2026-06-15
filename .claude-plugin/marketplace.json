@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-  "name": "synera-skills",
+  "name": "claude-code-skills",
   "description": "Skills de Synera para developers: integraciones de Argentina (AFIP/ARCA, MercadoPago, Correo Argentino) y automatizaciones (Meta + n8n + WhatsApp).",
   "owner": {
     "name": "Synera",

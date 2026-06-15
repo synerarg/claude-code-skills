@@ -1,4 +1,4 @@
-# synera-skills
+# claude-code-skills
 
 Marketplace de **skills de Synera** para developers. Integraciones de Argentina y
 automatizaciones que en general son un quilombo de implementar, con el trabajo ya hecho.
@@ -16,18 +16,18 @@ automatizaciones que en general son un quilombo de implementar, con el trabajo y
 ## Instalación (Claude Code)
 
 ```shell
-/plugin marketplace add synera/synera-skills
-/plugin install afip-arca@synera-skills
-/plugin install meta-n8n-whatsapp@synera-skills
-/plugin install n8n-production-patterns@synera-skills
-/plugin install mercadopago@synera-skills
-/plugin install correo-argentino@synera-skills
+/plugin marketplace add synerarg/claude-code-skills
+/plugin install afip-arca@claude-code-skills
+/plugin install meta-n8n-whatsapp@claude-code-skills
+/plugin install n8n-production-patterns@claude-code-skills
+/plugin install mercadopago@claude-code-skills
+/plugin install correo-argentino@claude-code-skills
 ```
 
 Actualizar cuando se publican cambios:
 
 ```shell
-/plugin marketplace update synera-skills
+/plugin marketplace update claude-code-skills
 ```
 
 ### Para todo el equipo (auto-prompt al confiar el repo)
@@ -37,14 +37,14 @@ Agregar a `.claude/settings.json` del proyecto:
 ```json
 {
   "extraKnownMarketplaces": {
-    "synera-skills": { "source": { "source": "github", "repo": "synera/synera-skills" } }
+    "claude-code-skills": { "source": { "source": "github", "repo": "synerarg/claude-code-skills" } }
   },
   "enabledPlugins": {
-    "afip-arca@synera-skills": true,
-    "meta-n8n-whatsapp@synera-skills": true,
-    "n8n-production-patterns@synera-skills": true,
-    "mercadopago@synera-skills": true,
-    "correo-argentino@synera-skills": true
+    "afip-arca@claude-code-skills": true,
+    "meta-n8n-whatsapp@claude-code-skills": true,
+    "n8n-production-patterns@claude-code-skills": true,
+    "mercadopago@claude-code-skills": true,
+    "correo-argentino@claude-code-skills": true
   }
 }
 ```
@@ -53,7 +53,7 @@ Agregar a `.claude/settings.json` del proyecto:
 
 ```bash
 # Una skill suelta a ~/.claude/skills/
-npx degit synera/synera-skills/plugins/afip-arca/skills/afip-arca ~/.claude/skills/afip-arca
+npx degit synerarg/claude-code-skills/plugins/afip-arca/skills/afip-arca ~/.claude/skills/afip-arca
 ```
 
 O usar `scripts/install.sh` (ver el script para elegir qué skills bajar).
@@ -61,7 +61,7 @@ O usar `scripts/install.sh` (ver el script para elegir qué skills bajar).
 ## Estructura
 
 ```
-synera-skills/
+claude-code-skills/
 ├─ .claude-plugin/marketplace.json     # catálogo
 ├─ plugins/
 │  ├─ afip-arca/
@@ -74,8 +74,12 @@ synera-skills/
 │  │  └─ skills/meta-n8n-whatsapp/
 │  │     ├─ SKILL.md
 │  │     └─ references/                # 01 Meta app, 02 conexión n8n + HMAC
-│  └─ n8n-production-patterns/
-│     └─ skills/n8n-production-patterns/SKILL.md
+│  ├─ n8n-production-patterns/
+│  │  └─ skills/n8n-production-patterns/SKILL.md
+│  ├─ mercadopago/
+│  │  └─ skills/mercadopago/        # SKILL.md + 14 references + assets/migration.sql
+│  └─ correo-argentino/
+│     └─ skills/correo-argentino/   # SKILL.md + references (api-reference, multi-tenant)
 ├─ scripts/install.sh
 └─ README.md
 ```
