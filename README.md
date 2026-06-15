@@ -162,4 +162,4 @@ comunidad:
 
 ---
 
-Hecho con ☕ en Argentina por **[Synera](https://synera.com.ar)** · y no te olvides de la ⭐
+Hecho con 💖 en Argentina por **[Synera](https://synera.com.ar)** · y no te olvides de la ⭐
