@@ -1,0 +1,10 @@
+{
+  "name": "n8n-production-patterns",
+  "description": "Patrones de producción para workflows n8n a escala (WhatsApp + AI Agent + Postgres + Supabase)",
+  "version": "0.1.1",
+  "author": {
+    "name": "Synera",
+    "email": "synera@synera.com.ar"
+  },
+  "license": "MIT"
+}

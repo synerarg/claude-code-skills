@@ -1,0 +1,10 @@
+# Local Claude Code settings (no publicar)
+.claude/settings.local.json
+
+# Dependencias
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log

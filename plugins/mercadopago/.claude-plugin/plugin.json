@@ -1,0 +1,10 @@
+{
+  "name": "mercadopago",
+  "description": "Integración completa de Mercado Pago: Checkout Pro, Bricks, Orders API, suscripciones, Money Out (envío a cuentas bancarias), marketplace/split, webhooks, reembolsos, comisiones y MCP server oficial.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Synera",
+    "email": "synera@synera.com.ar"
+  },
+  "license": "MIT"
+}

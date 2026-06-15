@@ -1,0 +1,10 @@
+{
+  "name": "correo-argentino",
+  "description": "Integración de envíos con Correo Argentino (apiMiCorreo) para ecommerce: auth + customerId, cotización, sucursales, creación de envíos, tracking, crons y emails de estado. Contratos reales verificados en producción + arquitectura multi-tenant.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Synera",
+    "email": "synera@synera.com.ar"
+  },
+  "license": "MIT"
+}

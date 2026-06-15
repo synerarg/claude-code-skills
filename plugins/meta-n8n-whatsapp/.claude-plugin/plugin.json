@@ -1,0 +1,10 @@
+{
+  "name": "meta-n8n-whatsapp",
+  "description": "Conectar una app de Meta a n8n para recibir mensajes de WhatsApp paso a paso",
+  "version": "0.3.0",
+  "author": {
+    "name": "Synera",
+    "email": "synera@synera.com.ar"
+  },
+  "license": "MIT"
+}

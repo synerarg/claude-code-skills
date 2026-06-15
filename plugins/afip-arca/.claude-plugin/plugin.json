@@ -1,0 +1,10 @@
+{
+  "name": "afip-arca",
+  "description": "Facturación electrónica AFIP/ARCA end-to-end (certificado, WSAA, WSFEv1, CAE)",
+  "version": "0.2.0",
+  "author": {
+    "name": "Synera",
+    "email": "synera@synera.com.ar"
+  },
+  "license": "MIT"
+}

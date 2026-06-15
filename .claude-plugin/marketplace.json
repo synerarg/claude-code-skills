@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "synera-skills",
+  "description": "Skills de Synera para developers: integraciones de Argentina (AFIP/ARCA, MercadoPago, Correo Argentino) y automatizaciones (Meta + n8n + WhatsApp).",
+  "owner": {
+    "name": "Synera",
+    "email": "synera@synera.com.ar"
+  },
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "afip-arca",
+      "source": "afip-arca",
+      "description": "Facturación electrónica AFIP/ARCA end-to-end: certificado digital, WSAA, WSFEv1, CAE. Homologación y producción.",
+      "version": "0.2.0",
+      "category": "argentina",
+      "keywords": [
+        "afip",
+        "arca",
+        "factura-electronica",
+        "wsfev1",
+        "wsaa",
+        "cae"
+      ]
+    },
+    {
+      "name": "meta-n8n-whatsapp",
+      "source": "meta-n8n-whatsapp",
+      "description": "Conectar una app de Meta a n8n para recibir mensajes de WhatsApp: app, permisos, número de prueba, webhook, verify token, HMAC.",
+      "version": "0.3.0",
+      "category": "automation",
+      "keywords": [
+        "meta",
+        "n8n",
+        "whatsapp",
+        "webhook",
+        "instagram"
+      ]
+    },
+    {
+      "name": "n8n-production-patterns",
+      "source": "n8n-production-patterns",
+      "description": "Patrones de producción para workflows n8n a escala: WhatsApp + AI Agent + Postgres Memory + Supabase. Debounce, claim, error handling, queue mode.",
+      "version": "0.1.1",
+      "category": "automation",
+      "keywords": [
+        "n8n",
+        "ai-agent",
+        "tools-agent",
+        "postgres-memory",
+        "queue-mode"
+      ]
+    },
+    {
+      "name": "mercadopago",
+      "source": "mercadopago",
+      "description": "Integración completa de Mercado Pago: Checkout Pro, Bricks, Orders API, suscripciones, Money Out (envío a cuentas bancarias), marketplace/split, webhooks, reembolsos, comisiones y MCP server oficial.",
+      "version": "0.1.0",
+      "category": "argentina",
+      "keywords": [
+        "mercadopago",
+        "checkout-pro",
+        "bricks",
+        "orders-api",
+        "money-out",
+        "webhooks",
+        "suscripciones"
+      ]
+    },
+    {
+      "name": "correo-argentino",
+      "source": "correo-argentino",
+      "description": "Envíos con Correo Argentino (apiMiCorreo) para ecommerce: auth + customerId, cotización, sucursales, creación de envíos, tracking, crons y emails de estado. Contratos reales verificados en producción + arquitectura multi-tenant.",
+      "version": "0.1.0",
+      "category": "argentina",
+      "keywords": [
+        "correo-argentino",
+        "apimicorreo",
+        "envios",
+        "shipping",
+        "tracking",
+        "ecommerce"
+      ]
+    }
+  ]
+}
