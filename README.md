@@ -95,4 +95,29 @@ claude-code-skills/
 
 ---
 
-Synera · web · AI automations · brand · ads · synera@synera.com.ar
+## ⭐ Dejá una estrella
+
+Si alguna skill te ahorró horas de leer documentación, **tirale una ⭐ al repo**. Es gratis,
+nos hace felices y ayuda a que más devs las encuentren.
+
+## Qué es Synera
+
+[**Synera**](https://synera.com.ar) es un estudio argentino que construye producto y hace
+crecer negocios. Estas skills son el mismo laburo que hacemos para clientes, liberado para la
+comunidad:
+
+- 🌐 **Web & producto** — apps full-stack (Next.js + Supabase), e-commerce, CRMs y dashboards.
+- 🤖 **Automatizaciones con IA** — agentes, workflows n8n, bots de WhatsApp e integraciones a medida.
+- 🎨 **Marca** — identidad visual y diseño.
+- 📈 **Ads** — campañas de performance.
+
+## Trabajemos juntos
+
+¿Querés que integremos esto por vos o tenés un proyecto en mente?
+
+- 🌐 Sitio: **[synera.com.ar](https://synera.com.ar)**
+- ✉️ Email: **[synera@synera.com.ar](mailto:synera@synera.com.ar)**
+
+---
+
+Hecho con ☕ en Argentina por **[Synera](https://synera.com.ar)** · y no te olvides de la ⭐
