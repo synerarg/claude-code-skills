@@ -1,0 +1,13 @@
+---
+description: Integración de Mercado Pago (pagos, webhooks, Money Out, suscripciones)
+alwaysApply: false
+---
+
+Para tareas de Mercado Pago seguí `.ai/skills/mercadopago/SKILL.md` y sus `references/`.
+
+<!--
+Ejemplo de regla de Cursor (tipo "Agent Requested": se auto-trae según `description`).
+Copiá este archivo a `.cursor/rules/mercadopago.mdc` en tu proyecto y duplicalo por cada
+skill que uses (correo-argentino, afip-arca, meta-n8n-whatsapp, n8n-production-patterns),
+ajustando `description` y la ruta del SKILL.md.
+-->

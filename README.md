@@ -82,6 +82,9 @@ npx degit synerarg/claude-code-skills/plugins/mercadopago/skills/mercadopago .ai
 Así el agente carga el detalle solo cuando hace falta (mismo modelo de "progressive disclosure"
 que en Claude Code).
 
+> 💡 Hay un `AGENTS.md` de ejemplo listo para copiar en [`examples/AGENTS.md`](examples/AGENTS.md)
+> (referencia las 5 skills) y una regla de Cursor en [`examples/cursor-rule.mdc`](examples/cursor-rule.mdc).
+
 ### Cursor (alternativa nativa con reglas)
 
 Cursor ya lee `AGENTS.md`, pero si preferís sus reglas, creá `.cursor/rules/mercadopago.mdc`:
