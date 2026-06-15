@@ -58,6 +58,45 @@ npx degit synerarg/claude-code-skills/plugins/afip-arca/skills/afip-arca ~/.clau
 
 O usar `scripts/install.sh` (ver el script para elegir qué skills bajar).
 
+## Instalación en Codex, Cursor y otros agentes
+
+El sistema de plugins (`/plugin install`) es de **Claude Code**. Pero como cada skill es una
+carpeta de markdown + scripts, sirve en **cualquier agente que lea archivos**. La vía universal
+es **`AGENTS.md`** (el estándar abierto que leen Codex, Cursor, Copilot, Gemini CLI, Windsurf y Zed).
+
+**1) Bajá la skill a tu proyecto** (ejemplo con Mercado Pago):
+
+```bash
+npx degit synerarg/claude-code-skills/plugins/mercadopago/skills/mercadopago .ai/skills/mercadopago
+```
+
+**2) Apuntala desde `AGENTS.md`** (raíz del repo; para Codex global, `~/.codex/AGENTS.md`):
+
+```md
+## Skills disponibles
+- Mercado Pago: para pagos MP (Checkout Pro/Bricks/Orders, webhooks, Money Out, suscripciones),
+  leé `.ai/skills/mercadopago/SKILL.md` y sus `references/`.
+- Correo Argentino: para envíos con apiMiCorreo, leé `.ai/skills/correo-argentino/SKILL.md`.
+```
+
+Así el agente carga el detalle solo cuando hace falta (mismo modelo de "progressive disclosure"
+que en Claude Code).
+
+### Cursor (alternativa nativa con reglas)
+
+Cursor ya lee `AGENTS.md`, pero si preferís sus reglas, creá `.cursor/rules/mercadopago.mdc`:
+
+```md
+---
+description: Integración de Mercado Pago (pagos, webhooks, Money Out, suscripciones)
+alwaysApply: false
+---
+Para tareas de Mercado Pago seguí `.ai/skills/mercadopago/SKILL.md` y sus references.
+```
+
+Con `description` + `alwaysApply: false` (tipo *Agent Requested*), Cursor la trae sola cuando
+detecta el tema. Reemplazá `mercadopago` por `correo-argentino`, `afip-arca`, etc.
+
 ## Estructura
 
 ```
